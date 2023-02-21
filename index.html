@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <div class="background-image">
+            <img src="../images/bg-main-desktop.png" alt="background-image">
+        </div>
+
+        <div class="content-area">
+
+            <form action="">
+                <div class="card-name">
+                    <label for="name">Cardholder Name</label>
+                    <br>
+                    <input type="text" placeholder="e.g. Jane Appleseed">
+                </div>
+
+                <div class="card-number">
+                    <label for="number">Card Number</label>
+                    <br>
+                    <input type="number" placeholder="e.g. 1234 5678 9123 0000">
+                </div>
+
+                <div class="expiry-date">
+                    <div class="date">
+                        <label for="number">Exp. Date (MM/YY)</label>
+                        <br>
+                        <input type="number" placeholder="MM">
+                        <input type="number" placeholder="YY">
+                    </div>
+
+                    <div class="cvc">
+                        <label for="number">CVC</label>
+                        <br>
+                        <input type="number" placeholder="e.g. 123">
+                    </div>
+                </div>
+            </form>
+
+            <div class="complete-state">
+                <img src="../images/icon-complete.svg" alt="complete-icon">
+                <h2>THANK YOU</h2>
+                <p>We've added your card details</p>
+                <button>Continue</button>
+            </div>
+
+            <div class="card-image">
+
+                <div class="front-card">
+                    <img src="../images/bg-card-front.png" alt="">
+                    
+                    <div class="card-details">
+                        <img src="../images/card-logo.svg" alt="">
+                        <h2>0000 0000 0000 0000</h2>
+                        <p>Jane Appleseed <span>00/00</span> </p>
+                    </div>
+                </div>
+
+                <div class="back-card">
+                    <img src="../images/bg-card-back.png" alt="">
+                    
+                    <div class="card-details">
+                        <p>000</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
