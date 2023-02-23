@@ -15,3 +15,153 @@
     --dark-grayish-violet: hsl(279, 6%, 55%);
     --very-dark-violet: hsl(278, 68%, 11%);
 }
+
+body {
+    height: 100vh;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.background-image img {
+    flex: 1;
+    max-width: 480px;
+    height: 822px;
+}
+
+/* content area starts here */
+
+.content-area {
+    flex: 2;
+}
+
+.content-area form, .complete-state {
+    margin: 25% auto;
+    width: 35%;
+}
+
+.content-area form {
+    text-transform: uppercase;
+    visibility: hidden;
+}
+
+.label {
+    margin-bottom: 7px;
+}
+
+.label label {
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    color: var(--very-dark-violet);
+}
+
+.input input {
+    margin-bottom: 20px;
+    border: 1px solid var(--light-grayish-violet);
+    height: 44px;
+    border-radius: 10px;
+}
+
+.card-name input, .card-number input {
+    width: 100%;
+}
+
+.input ::placeholder {
+    color: var(--light-grayish-violet);
+    font-size: 0.9rem;
+    padding: 10px 10px;
+}
+
+.date {
+    width: 50%;
+}
+
+.date input {
+    width: 70px;
+    margin-right: 7px;
+}
+
+.cvc {
+    float: right;
+    width: 50%;
+    margin-top: -95px;
+}
+
+.cvc input {
+    width: 170px;
+}
+
+.confirm {
+    width: 100%;
+    height: 53px;
+    margin-top: 20px;
+    background-color: var(--very-dark-violet);
+    color: var(--white);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Complete state starts here */
+
+.complete-state {
+    /* visibility: hidden; */
+    margin-top: -588px;
+    background-color: aquamarine;
+}
+
+.complete-state img, .complete-state h2, .complete-state p {
+    margin-bottom: 20px;
+    
+}
+
+
+
+/* card style */
+.card-image {
+    position: absolute;
+    top: 187px;
+    left: 200px;
+}
+
+.front-card .card, .back-card img {
+    width: 420px;
+}
+
+.card-details {
+    margin-top: -210px;
+    margin-left: 25px;
+}
+
+.card-details h2 {
+    margin-top: 50px;
+    letter-spacing: 0.1rem;
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+.card-details p, .card-details span {
+    margin-top: 25px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.card-details span {
+    margin-left: 200px;
+}
+
+.back-card img {
+    margin-left: 80px;
+    margin-top: 70px;
+}
+
+.cvc-number {
+    position: absolute;
+    margin-left: 390px;
+    top: 350px;
+}
