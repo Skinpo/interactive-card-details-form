@@ -27,10 +27,13 @@ body {
     flex-wrap: wrap;
 }
 
-.background-image img {
-    flex: 1;
-    max-width: 480px;
+.background-image {
+    background-image: url("images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 480px;
     height: 822px;
+    flex: 1;
 }
 
 /* content area starts here */
@@ -82,7 +85,7 @@ body {
 }
 
 .date input {
-    width: 70px;
+    max-width: 70px;
     margin-right: 7px;
 }
 
@@ -93,7 +96,7 @@ body {
 }
 
 .cvc input {
-    width: 190px;
+    max-width: 190px;
 }
 
 .confirm, .btn-continue {
@@ -186,4 +189,9 @@ body {
 }
 
 /* media querry */
-@media only screen and (max-width: 375px)
+@media only screen and (max-width: 375px) {
+    body {
+        height: 100vh;
+        max-width: 375px;
+    }
+}
