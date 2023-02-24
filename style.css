@@ -41,7 +41,7 @@ body {
 
 .content-area form, .complete-state {
     margin: 25% auto;
-    max-width: 45%;
+    max-width: 50%;
     padding-left: 110px;
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 .cvc input {
-    width: 170px;
+    width: 190px;
 }
 
 .confirm, .btn-continue {
@@ -120,7 +120,7 @@ body {
 }
 
 .complete-state img {
-    margin-left: 130px;
+    margin-left: 150px;
 }
 
 .pass-mark {
